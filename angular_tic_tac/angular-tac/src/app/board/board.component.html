@@ -1,0 +1,23 @@
+<h1>Current Player: {{player}}</h1>  <!--passing the player property to see the current player-->
+
+
+<button nbButton outline status="danger" (click)="newGame()">Start new Game</button> <!--initialization reset everry time we click on start new game it will activate newGame method-->
+
+
+<h2 *ngIf="winner"> <!--if the player is winner return string header as who won the game-->
+
+    Player {{winner}} won the game!
+</h2>
+
+<main>
+
+    <app-square  
+
+       *ngFor="let val of squares; let i = index"  
+       [value]="val"            
+       (click)="makeMove(i)">
+    
+    </app-square>
+
+
+</main>
