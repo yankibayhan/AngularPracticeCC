@@ -1,0 +1,20 @@
+<h1>Welcome to {{title}}</h1>
+
+
+<div class="show-pipe">
+
+    <!-- <p  [innerHTML]= "user.firstname | h: user.firstname" ></p> --> <!--I sanitized my firstname object with the piping-->
+     
+</div>
+
+<ul>
+
+  <li *ngFor='let use of user'>
+
+    {{use.firstname}} - {{use.zip_code}}
+
+  </li>
+
+</ul>
+
+<router-outlet></router-outlet>
