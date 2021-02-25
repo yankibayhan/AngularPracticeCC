@@ -1,4 +1,4 @@
 # AngularPracticeCC
-This is a list of trainings involve in Angular Web Framework
+This is a series of trainings involve in Angular Web Framework
 
 Feel free to study from here also!
